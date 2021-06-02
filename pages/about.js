@@ -1,14 +1,15 @@
 import Head from "next/head";
 
-export default function Home() {
+const about = () => {
   return (
     <div>
       {/* SEO META DATA */}
       <Head>
-        <title>Ainnes Next Project </title>
+        <title>Ainnes About Page </title>
         <meta name="keywords" content="web development" programming />
       </Head>
-      <h1>welcome to next</h1>
+      <h1>About</h1>
     </div>
   );
-}
+};
+export default about;
