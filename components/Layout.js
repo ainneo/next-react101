@@ -1,14 +1,22 @@
+import Nav from "./Nav";
+// import Meta from "./Meta";
+import Header from "./Header";
 import styles from "../styles/Layout.module.css";
 
-const layout = ({ children }) => {
+const Layout = ({ children }) => {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        hello
-        {children}
-      </main>
-    </div>
+    <>
+      {/* <Meta /> */}
+      <Nav />
+      <div className={styles.container}>
+        <main className={styles.main}>
+          <Header />
+          {children} {/* All the Pages */}
+        </main>
+      </div>
+      {/* <Footer/> */}
+    </>
   );
 };
 
-export default layout;
+export default Layout;

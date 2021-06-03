@@ -21,19 +21,33 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 #### File Structure
 
-- Public folder: anything in this folder can appear in the browser, so add images or stylesheets.
-- Styles -> globals.css: global css file
-- Styles -> Home.module.css: applies to the Home page
-- Pages -> index.js file is the home page
-- Pages -> about.js file is the an page
-- Pages -> app.js file is the container for all page components - this is good place to create the layout
-- Components -> Layout.js file is used to create the main layouts used in app.js file - https://nextjs.org/docs/advanced-features/custom-app
-
-#### Routing
-
-- No third party router needed like React Router...etc,
-- http://localhost:3000/ => http://localhost:3000/about
+- public folder: anything in this folder can appear in the browser, so add images or stylesheets.
+- styles -> globals.css: global css file
+- styles -> Home.module.css: applies to the Home page
+- pages -> index.js file is the home page
+- pages -> about.js file is the an page
+- pages -> app.js file is the container for all page components - this is good place to create the layout
+- components -> Layout.js file is used to create the main layouts used in app.js file. for more see: https://nextjs.org/docs/advanced-features/custom-app
+- Naming conventions for pages/components: componenents start w/upper case, pages start w/lower case
 
 #### SEO
 
 - All meta data is located in the Head
+
+#### Routing & Links
+
+- No third party router needed like React Router...etc,
+- http://localhost:3000/ => http://localhost:3000/about
+- create links in navbar component via next/link
+- For nest routes see the example in article/[id] folder
+
+### Custom Documents: (not use in the project but good to undertand)
+
+- https://nextjs.org/docs/advanced-features/custom-document
+
+### Exporting a static site
+
+- add next export to build in the package.json file like so: "build": "next build && next export",
+- then run `next build` (builds for production but also exports a static website).
+- generates a out folder - which is a static website
+- install ` npm i -g serve` if you dont have it, then run ``serve -s out -p 8000`

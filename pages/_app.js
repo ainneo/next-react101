@@ -1,4 +1,4 @@
-//you can use globals styles in this file to set all your styles instead of using homestyles
+//you can use globals styles in this file to set all your styles
 import "../styles/globals.css";
 import Layout from "../components/Layout";
 
