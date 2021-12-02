@@ -24,7 +24,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - public folder: anything in this folder can appear in the browser, so add images or stylesheets.
 - styles -> globals.css: global css file
 - styles -> Home.module.css: applies to the Home page
-*** pages folder - this is our routes to our page (we do not need router)
+- *** pages folder - this is our routes to our pages (we do not need router)
 - pages -> index.js file is the home page
 - pages -> about.js file is the an page
 - pages -> app.js file is the container for all page components - this is good place to create the layout
